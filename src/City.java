@@ -12,6 +12,8 @@ public class City {
     private int population;
     private String foundation;
 
+
+
     public int getId() {
         return id;
     }

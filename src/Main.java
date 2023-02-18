@@ -6,7 +6,9 @@ public class Main {
 
         CityMethods cityMethods = new CityMethodsImpl();
 
-        cityMethods.printAllCities(cityMethods.readFile());
+      //  cityMethods.printAllCities(cityMethods.readFile());
+        // cityMethods.groupByRegion(cityMethods.readFile());
+        cityMethods.searchByName("Майкоп");
 
 
     }

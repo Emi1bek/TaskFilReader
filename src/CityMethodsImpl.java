@@ -52,10 +52,28 @@ public class CityMethodsImpl implements CityMethods {
     @Override
     public void groupByRegion(City[] cities) {
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Test the region!");
+        String getNameRegion = sc.nextLine();
+
+        for (City c : cities) {
+            if (c.getRegion().equals(getNameRegion)) {
+                System.out.println(c);
+            }
+
+        }
+
     }
 
     @Override
     public void searchByName(String name) {
-
+        CityMethods cityMethods = new CityMethodsImpl();
+        City[] c = cityMethods.readFile();
+        for (int i = 0; i < c.length; i++) {
+            if (c[i].getName().equals(name)) {
+                System.out.println(c[i]);
+            }
+        }
     }
 }
+
